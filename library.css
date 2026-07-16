@@ -1,0 +1,99 @@
+.library { margin-top: 72px; border-top: 1px solid var(--line); padding-top: 46px; }
+.library-head { display: flex; justify-content: space-between; gap: 38px; align-items: end; }
+.library-head h3 { margin: 0; font-size: 32px; letter-spacing: -1.5px; }
+.library-head > p { max-width: 370px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.library-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 20px; }
+.library-filter { border: 1px solid #bdc4ba; background: transparent; color: #42534a; padding: 8px 12px; border-radius: 999px; cursor: pointer; font: 700 12px "Noto Sans SC", sans-serif; }
+.library-filter.active, .library-filter:hover { border-color: var(--forest); color: var(--forest); background: var(--acid); }
+.library-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.library-card { min-height: 220px; padding: 23px; background: #f8f8f2; border: 1px solid var(--line); display: flex; flex-direction: column; }
+.library-card.is-protected { background: #eceee7; border-style: dashed; }
+.library-card-top { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
+.library-card .kind { color: #4d6b5a; font: 700 11px "Barlow Condensed", sans-serif; letter-spacing: 1.6px; }
+.library-card .count { color: #6a776f; font-size: 11px; white-space: nowrap; }
+.library-card h4 { font-size: 18px; line-height: 1.3; margin: 28px 0 9px; }
+.library-card p { font-size: 12px; color: var(--muted); line-height: 1.8; margin: 0; }
+.library-card-footer { margin-top: auto; padding-top: 19px; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.library-card button, .library-card a { color: var(--forest); background: none; border: 0; padding: 0; font: 700 12px "Noto Sans SC", sans-serif; cursor: pointer; text-decoration: none; }
+.library-card button:hover, .library-card a:hover { color: #568548; }
+.library-card .state { font-size: 11px; color: #67736d; }
+.resource-dialog { max-width: 720px; }
+.resource-dialog .asset-list { list-style: none; padding: 0; margin: 22px 0 0; border-top: 1px solid var(--line); }
+.resource-dialog .asset-list li { display: flex; justify-content: space-between; gap: 14px; padding: 13px 0; margin: 0; border-bottom: 1px solid var(--line); }
+.resource-dialog .asset-list a { font-size: 13px; }
+.download-warning { padding: 11px 13px; background: #fff0dc; color: #88552f !important; border-left: 3px solid #e47540; }
+.download-note { padding: 10px 13px; background: #edf3e8; color: #49664f !important; }
+.resource-video { width: 100%; max-height: 330px; margin: 18px 0 4px; background: #102d25; }
+.video-pending { display: grid; gap: 6px; margin: 18px 0 8px; padding: 14px 16px; background: #e8eee5; border-left: 3px solid #9fbd75; color: #49664f; font-size: 12px; line-height: 1.7; }
+.video-pending b { color: #245d4c; font-size: 13px; }
+.map-card { background-image: linear-gradient(0deg, rgba(8,31,24,.92), rgba(10,32,25,.1)), url("./assets/official-tribe-map.png"); text-decoration: none; }
+.map-card:hover h3 { color: var(--acid); }
+.preset.featured .text-button { position: static; display: inline-block; margin-top: 16px; }
+#resources .resource-layout { display: block; }
+#resources .resource-layout .resource-list { display: none; }
+#resources .resource-layout .map-card { min-height: 470px; }
+
+/* 森林沙盒主题：保持原有布局，只替换氛围、材质和视觉重心。 */
+body { background: #e6e8dc; }
+.topbar { background: rgba(246,247,239,.96); backdrop-filter: blur(12px); }
+.hero { background: linear-gradient(90deg, rgba(226,231,220,.98) 0%, rgba(226,231,220,.93) 38%, rgba(22,55,43,.42) 66%, rgba(8,27,22,.76) 100%), url("./assets/forest-survivor-hero.png") center/cover; }
+.hero-art { display: none; }
+.hero-copy .eyebrow { color: #4d805f; }
+.hero h1 em { color: #3f7659; }
+.quick-grid a { background: #edf0e6; box-shadow: inset 0 -3px 0 rgba(25,59,45,.12); }
+.quick-grid a:first-child { background: #c4d58f; }
+.quick-grid a:nth-child(2) { background: #cfe3d2; }
+.quick-grid a:nth-child(3) { background: #dce3d7; }
+.section-heading h2, .library-head h3 { color: #183f32; }
+.preset, .library-card { box-shadow: 0 8px 0 rgba(34,66,51,.08); }
+.preset.featured { background: linear-gradient(145deg, #174b3c, #102f27); }
+.preset.dark { background: #dfe5da; }
+.server-section { background: linear-gradient(135deg, #12382e, #0b241d); }
+.server-section { background-image: linear-gradient(90deg, rgba(8,29,22,.96), rgba(8,29,22,.82)), url("./assets/survivor-camp-banner.png"); background-size: cover; background-position: center; }
+.about { background: rgba(233,237,226,.65); }
+.community { max-width: 1200px; margin: 0 auto; padding: 105px 25px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; background: rgba(228,234,219,.72); }
+.community h2 { color: #173f32; font-size: clamp(38px,5vw,62px); line-height: .98; letter-spacing: -3px; margin: 0 0 20px; }
+.community h2 em { color: #568548; font-style: normal; }
+.community-intro > p:not(.eyebrow) { max-width: 320px; color: var(--muted); font-size: 13px; line-height: 1.9; }
+.board { background: rgba(247,248,240,.9); border: 1px solid #c7d2c4; padding: 26px; box-shadow: 8px 8px 0 rgba(34,66,51,.08); }
+.board label { display: block; color: #36584a; font-size: 12px; font-weight: 700; margin-bottom: 14px; }
+.board input, .board textarea { width: 100%; margin-top: 7px; border: 1px solid #c7d2c4; background: #eef2e9; padding: 11px 12px; color: var(--ink); font: 13px "Noto Sans SC",sans-serif; resize: vertical; }
+.board input:focus, .board textarea:focus { outline: 2px solid #9fbd75; border-color: #568548; }
+.message-list { margin-top: 25px; border-top: 1px solid #d5ddd1; }
+.message { padding: 15px 0; border-bottom: 1px solid #d5ddd1; }
+.message b { color: #204e3d; font-size: 13px; }.message time { color: #849188; font-size: 11px; margin-left: 8px; }.message p { color: #596a61; font-size: 12px; line-height: 1.7; margin: 7px 0 0; }
+@media (max-width: 700px) { .community { display: block; padding: 75px 22px; }.board { margin-top: 30px; padding: 20px; } }
+.resources { background: linear-gradient(180deg, rgba(230,234,221,.96), rgba(220,228,211,.9)), url("./assets/forest-survivor-hero.png") center/cover; }
+.resources .preset, .resources .library-card { background-color: rgba(247,248,240,.9); backdrop-filter: blur(4px); }
+.section-heading, .library { position: relative; z-index: 1; }
+.survival-strip { min-height: 570px; position: relative; display: flex; align-items: center; padding: 90px max(25px,calc((100vw - 1150px)/2)); color: #f4f4e9; background: linear-gradient(90deg, rgba(8,28,22,.94) 0%, rgba(8,28,22,.72) 37%, rgba(8,28,22,.08) 76%), url("./assets/survivor-camp-banner.png") center/cover; overflow: hidden; }
+.survival-strip:after { content: "FIELD NOTES / 01"; position: absolute; right: max(25px,calc((100vw - 1150px)/2)); top: 35px; color: rgba(220,250,85,.75); font: 700 11px "Barlow Condensed",sans-serif; letter-spacing: 2.5px; }
+.survival-strip-copy { max-width: 460px; position: relative; z-index: 1; }
+.survival-strip-copy .eyebrow { color: var(--acid); }
+.survival-strip h2 { font-size: clamp(38px,5vw,66px); letter-spacing: -3px; margin: 0 0 20px; }
+.survival-strip h2 em { color: var(--acid); font-style: normal; }
+.survival-strip-copy > p:not(.eyebrow) { color: #cbd5c9; line-height: 1.9; font-size: 14px; margin: 0 0 24px; }
+.creator-badge { display: inline-flex; align-items: center; gap: 12px; margin-top: 24px; padding: 9px 13px; border-left: 3px solid #568548; background: rgba(244,247,236,.72); color: #173f32; }
+.creator-badge strong { font-size: 14px; }
+.creator-badge span { font-size: 11px; color: #5c7166; }
+@media (max-width: 700px) { .survival-strip { min-height: 590px; align-items: end; padding: 60px 22px; background-position: 63% center; }.survival-strip:after { right: 22px; top: 25px; }.survival-strip-copy { max-width: 330px; }.survival-strip h2 { letter-spacing: -2px; } }
+
+/* 资料文字层：不改原文，只提升阅读层级与颜色对比。 */
+dialog.resource-dialog { background: #f3f4ed; border: 1px solid #a8b9ad; border-top: 6px solid var(--acid); color: var(--ink); padding: 38px; }
+dialog.resource-dialog { width: min(560px, calc(100vw - 36px)); max-height: 78vh; padding: 30px; }
+dialog.resource-dialog h3 { color: var(--forest); font-size: 29px; letter-spacing: -1px; }
+dialog.resource-dialog > p { color: #53655c; line-height: 1.9; }
+dialog.resource-dialog .asset-list { background: #e8eee5; border: 1px solid #d0dbd0; padding: 0 17px; }
+dialog.resource-dialog .asset-list li { border-bottom-color: #d0dbd0; align-items: center; }
+dialog.resource-dialog .asset-list li:last-child { border-bottom: 0; }
+dialog.resource-dialog .asset-list a { color: #245d4c; text-decoration: none; border-bottom: 1px solid #8eb49f; padding-bottom: 2px; }
+dialog.resource-dialog .asset-list a:hover { color: #113b2f; border-bottom-color: var(--orange); }
+dialog.resource-dialog .asset-list span { color: #718078; background: #dce6dc; padding: 4px 7px; }
+dialog.resource-dialog .close { color: var(--forest); width: 32px; height: 32px; line-height: 24px; }
+dialog.resource-dialog .close:hover { background: var(--acid); }
+.resource-dialog .asset-list span { color: var(--muted); font-size: 11px; text-align: right; }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 20px; }
+.gallery a { display: block; border: 1px solid var(--line); background: #e6e8df; aspect-ratio: 4 / 3; overflow: hidden; }
+.gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .2s ease; }
+.gallery a:hover img { transform: scale(1.03); }
+@media (max-width: 700px) { .library { margin-top: 48px; padding-top: 35px; }.library-head { display: block; }.library-head h3 { font-size: 26px; }.library-head > p { margin-top: 13px; }.library-grid { grid-template-columns: 1fr; }.library-card { min-height: 190px; }.gallery { grid-template-columns: repeat(2, 1fr); } }

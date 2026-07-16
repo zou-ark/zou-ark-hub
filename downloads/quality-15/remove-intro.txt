@@ -1,0 +1,3 @@
+删除此目录下面的文件，进服不会有活动动画
+
+steam\steamapps\common\ARK Survival Ascended\ShooterGame\Binaries\Win64\ShooterGame\Mods\83374\927090 6017502\WinterWonderland\Content\Movies

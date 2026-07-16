@@ -1,0 +1,2 @@
+Stat FPS | t.MaxFPS 0 | r.VolumetricCloud 0 | r.VolumetricFog 0 | r.BloomQuality 0 | r.LightShaftQuality 0 | grass.sizeScale 0 | R.ShadowQuality 0 | r.Lumen.DiffuseIndirect.Allow 0 | r.Lumen.Reflections.Allow 0 | r.Water.SingleLayer.Reflection 0 | wp.Runtime.HLOD.ForceDisable 1 | Gamma 3 | r.Nanite.MaXPixelsPerEdge 5 | r.MipMapLODBias 1 | r.SkylightIntensityMultiplier 3 | r.Tonemapper.Sharpen 2
+grass.densityscale 0 | r.Water.SingleLayer.Reflection 0 | r.LightShaftQuality 0 | r.VolumetricCloud 0 

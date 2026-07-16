@@ -1,0 +1,7 @@
+.admin-panel { margin-top: 22px; padding: 16px; background: #e5eee1; border: 1px solid #b9cbb8; color: #466251; font-size: 12px; }
+.admin-panel-head { display: flex; justify-content: space-between; align-items: center; color: #173f32; }
+.admin-panel-head button { border: 0; background: transparent; color: #568548; cursor: pointer; }
+#admin-login-dialog { width: min(420px, calc(100vw - 36px)); padding: 30px; background: #f3f4ed; border: 1px solid #a8b9ad; border-top: 5px solid var(--acid); }
+#admin-login-dialog h3 { color: #173f32; margin-top: 0; }
+#admin-login-dialog label { display: block; color: #36584a; font-size: 12px; font-weight: 700; margin: 13px 0; }
+#admin-login-dialog input { width: 100%; margin-top: 6px; padding: 10px; border: 1px solid #c7d2c4; background: #eef2e9; }

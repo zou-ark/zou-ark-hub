@@ -1,0 +1,15 @@
+.resource-item {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.resource-item:hover b { color: #568548; }
+
+dialog a {
+  color: #315f50;
+  font-weight: 700;
+}

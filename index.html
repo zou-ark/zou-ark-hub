@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="方舟玩家的战斗画质、设置攻略、服务器导航与资源入口。" />
+    <title>Zou走走 · 方舟俱乐部</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260715" />
+    <link rel="stylesheet" href="resources.css?v=20260715" />
+    <link rel="stylesheet" href="library.css?v=20260715" />
+    <link rel="stylesheet" href="online-community.css?v=20260715" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Zou走走的方舟俱乐部首页"><span>方舟</span>俱乐部<small>ZOU走走 · 玩家资源站</small></a>
+      <button class="nav-toggle" aria-label="打开导航" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="#presets">画质方案</a><a href="#resources">资源库</a><a href="#servers">服务器</a><a href="#community">留言板</a><a href="#about">关于本站</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">ZOU走走 · ARK: SURVIVAL ASCENDED 玩家资源中枢</p>
+          <h1>更清晰的战斗<br /><em>更快进入方舟。</em></h1>
+          <p class="intro">由方舟 UP 主持续整理：战斗画质、实用设置、地图资源与值得体验的服务器。所有内容会标注适用版本和更新时间。</p>
+          <div class="hero-actions"><a class="button primary" href="#library-title">跳转下载资源</a><a class="button ghost" href="#servers">浏览服务器</a></div>
+          <div class="creator-badge"><strong>Zou走走</strong><span>ARK 玩家资源站 · VX：Hiizou</span></div>
+        </div>
+        <div class="hero-art" aria-label="方舟丛林场景装饰图"></div>
+        <div class="status-card">
+          <span class="pulse"></span><div><b>方舟累计安装量</b><small>截至 2024 年 12 月 · 主机与 PC，非实时在线人数</small></div><strong>9,480万+</strong>
+        </div>
+      </section>
+
+      <section class="quick-grid" aria-label="快速入口">
+        <a href="#presets"><span>01</span><b>战斗画质</b><small>1.0 / 1.5 方案与使用说明</small><i>→</i></a>
+        <a href="#resources"><span>02</span><b>实用资源</b><small>地图、配方、设置与攻略整理</small><i>→</i></a>
+        <a href="#servers"><span>03</span><b>服务器导航</b><small>玩法标签与公开信息汇总</small><i>→</i></a>
+      </section>
+
+      <section class="section" id="presets">
+        <div class="section-heading"><p class="eyebrow">核心内容</p><h2>战斗画质方案</h2><p>先看说明再使用。不同版本、显卡和服务器规则可能影响效果，请先备份原文件。</p></div>
+        <div class="preset-grid">
+          <article class="preset featured"><div class="preset-label">推荐起点</div><p class="number">1.5</p><h3>战斗优化方案</h3><p>降低云雾、阴影与反射等画面负担，优先保证辨识度与帧数表现。</p><ul><li>适合：对战 / 资源搜集</li><li>包含控制台命令说明</li><li>更新时需复查兼容性</li></ul><button class="text-button" data-modal="preset">查看使用说明 <span>↗</span></button></article>
+          <article class="preset"><p class="number">1.0</p><h3>经典战斗画质</h3><p>保留多套偏好设置，适合需要按地图和场景切换的玩家。</p><ul><li>原画战斗</li><li>资源显示强化</li><li>冰宫除水等场景方案</li></ul><button class="text-button" data-modal="classic">查看方案目录 <span>↗</span></button></article>
+          <article class="preset dark"><p class="number">INI</p><h3>进阶配置</h3><p>面向熟悉文件修改的玩家。使用前务必自行备份，并了解每一项的作用。</p><ul><li>GameUserSettings</li><li>DeviceProfiles</li><li>问题排查指引</li></ul><button class="text-button" data-modal="ini">查看注意事项 <span>↗</span></button></article>
+        </div>
+      </section>
+
+      <section class="section resources" id="resources">
+        <div class="section-heading"><p class="eyebrow">持续整理</p><h2>资源与攻略库</h2><p>已接入部分安全文本资源；后续每项会补充来源、作者、适用版本和视频讲解。</p></div>
+        <div class="resource-layout">
+          <a class="map-card" href="./assets/official-tribe-map.png" target="_blank" rel="noreferrer"><div><span>OFFICIAL TRIBE MAP</span><h3>官服部落<br />分布地图</h3><p>方舟官服部落关系与势力范围参考图。点击查看原图。</p></div></a>
+          <div class="resource-list">
+            <button type="button" class="resource-item" data-modal="quality"><span class="tag">画质</span><div><b>1.5 战斗画质代码</b><small>代码下载、参数解释与畸变专用方案</small></div><i>→</i></button>
+            <button type="button" class="resource-item" data-modal="settings"><span class="tag">设置</span><div><b>1.0 / 1.5 游戏设置</b><small>按图调整游戏与键盘设置</small></div><i>→</i></button>
+            <button type="button" class="resource-item" data-modal="teleport"><span class="tag">教学</span><div><b>飞雷神实战教学</b><small>抓狗、自爆与时机操作步骤</small></div><i>→</i></button>
+            <button type="button" class="resource-item" data-modal="translate"><span class="tag">汉化</span><div><b>1.0 双语汉化安装</b><small>补丁文件放置位置说明</small></div><i>→</i></button>
+          </div>
+        </div>
+        <div class="library" aria-labelledby="library-title">
+          <div class="library-head"><div><p class="eyebrow">ZOU RESOURCE VAULT</p><h3 id="library-title">全部资料，分类查找</h3></div><p>已整理下载包中的文字、图片、视频、外部文档与本地工具。点击分类快速筛选。</p></div>
+          <div class="library-filters" role="group" aria-label="资源分类筛选"></div>
+          <div class="library-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="survival-strip" aria-label="方舟生存营地">
+        <div class="survival-strip-copy"><p class="eyebrow">FIELD CAMP · ZOU走走</p><h2>先活下来，<br /><em>再建立你的部落。</em></h2><p>从一套画质设置、一张官服地图，到找到一起作战的服务器。这里是你的方舟生存补给站。</p><a class="button light" href="#servers">寻找服务器</a></div>
+      </section>
+
+      <section class="server-section" id="servers">
+        <div class="server-top"><div><p class="eyebrow">SERVER DIRECTORY</p><h2>找服前，先看规则。</h2></div><p>本站会按稳定性、规则透明度、独狼友好程度与管理反馈进行信息整理；不替任何服务器作担保。</p></div>
+        <div class="server-grid">
+          <article class="server-card"><span class="badge">筹备展示</span><h3>精选服务器</h3><p>第一批服务器资料待你确认后发布。</p><div class="server-tags"><span>PVP / PVE</span><span>国服</span><span>规则公开</span></div><button class="text-button" data-modal="server">提交/推荐服务器 <span>↗</span></button></article>
+          <article class="server-card promo"><span class="badge">合作推广位</span><h3>为优质服务器<br />留一个位置</h3><p>后续可展示服务器特色、开服时间与进群方式；合作内容会清晰标注。</p><button class="button light" data-modal="promo">查看合作说明</button></article>
+        </div>
+      </section>
+
+      <section class="community" id="community"><div class="community-intro"><p class="eyebrow">COMMUNITY BOARD</p><h2>留下你的<br /><em>方舟问题。</em></h2><p>当前支持本地演示；接入云端后，玩家可以跨设备留言，你可以登录管理员面板置顶、回复和管理内容。</p><button id="admin-login-open" class="button ghost" type="button">管理员登录</button></div><div class="board"><form id="message-form"><label>昵称<input id="message-name" maxlength="20" placeholder="例如：独狼玩家" required /></label><label>留言<textarea id="message-body" maxlength="240" rows="4" placeholder="想看什么攻略，或者遇到了什么问题？" required></textarea></label><button class="button primary" type="submit">发布留言</button></form><div id="message-list" class="message-list" aria-live="polite"></div><div id="admin-panel" class="admin-panel" hidden><div class="admin-panel-head"><b>管理员面板</b><button id="admin-logout" type="button">退出</button></div><p>在线版接入后，这里可以置顶、回复、隐藏和删除留言。</p></div></div></section>
+
+      <section class="about" id="about"><div><p class="eyebrow">ABOUT ZOU走走</p><h2>这是 Zou走走的内容基地，<br />也是玩家的实用入口。</h2></div><div><p>视频带来关注，网站把画质文件、图文教程和可靠链接沉淀下来。所有外部资源将尽量标明来源；有侵权或失效内容可联系下架。</p><p><b>抖音：Zou走走</b></p><p><b>微信：Hiizou</b></p></div></section>
+    </main>
+
+    <footer><a class="brand" href="#top"><span>方舟</span>俱乐部</a><p>© 2026 Zou走走 · 方舟俱乐部为非官方玩家资源站，与 Studio Wildcard 无隶属关系。</p><a href="https://www.sec.gov/Archives/edgar/data/1886894/000164117225000784/form10-k.htm" target="_blank" rel="noreferrer">数据来源 ↗</a><a href="#top">返回顶部 ↑</a></footer>
+
+    <dialog id="modal"><button class="close" aria-label="关闭">×</button><div id="modal-content"></div></dialog>
+    <dialog id="admin-login-dialog"><button class="close" id="admin-login-close" aria-label="关闭">×</button><h3>管理员登录</h3><p>本地演示版不会发送账号信息。上线后使用云端邮箱认证。</p><form id="admin-login-form"><label>邮箱<input type="email" id="admin-email" placeholder="admin@example.com" required /></label><label>密码<input type="password" id="admin-password" required /></label><button class="button primary" type="submit">登录</button></form></dialog>
+    <script src="script.js?v=20260715"></script>
+    <script src="online-config.js?v=20260715"></script>
+    <script src="online-community.js?v=20260715"></script>
+    <script src="library.js?v=20260715"></script>
+  </body>
+</html>
