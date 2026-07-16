@@ -1,4 +1,4 @@
-/* Hero impact upgrade: bigger survivor focus, rain motion, and two heavy data beats. */
+/* Hero impact upgrade: bigger survivor focus, real rain motion, and two right-side data beats. */
 .hero {
   min-height: 650px;
   isolation: isolate;
@@ -10,13 +10,18 @@
 .hero:before {
   content: "";
   position: absolute;
-  inset: -28% 0;
+  inset: -22% -8%;
   z-index: 0;
   pointer-events: none;
-  background-image: repeating-linear-gradient(112deg, rgba(235,248,239,.18) 0 1px, transparent 1px 32px);
-  opacity: .72;
-  transform: translate3d(0,-8%,0);
-  animation: arkRain 1.9s linear infinite;
+  background-image:
+    linear-gradient(112deg, transparent 0 42%, rgba(240,255,248,.45) 48%, rgba(240,255,248,.18) 52%, transparent 60%),
+    linear-gradient(112deg, transparent 0 44%, rgba(210,238,230,.24) 49%, transparent 58%),
+    radial-gradient(circle, rgba(235,255,248,.24) 0 1px, transparent 2px);
+  background-size: 34px 132px, 58px 190px, 90px 90px;
+  background-position: 0 0, 24px -80px, 0 0;
+  opacity: .86;
+  filter: blur(.15px);
+  animation: arkRain 1.05s linear infinite;
 }
 .hero:after {
   content: "";
@@ -28,32 +33,44 @@
 }
 .hero-copy, .status-card { position: relative; z-index: 2; }
 .impact-metrics {
-  right: clamp(24px,5.5vw,86px);
-  bottom: 38px;
-  width: min(560px, calc(100% - 48px));
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: clamp(40px,7vw,128px);
+  bottom: clamp(52px,11vh,112px);
+  width: min(390px, calc(100% - 48px));
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
+  grid-template-columns: 1fr;
+  gap: 16px;
   background: transparent;
   box-shadow: none;
   align-items: stretch;
 }
 .impact-metrics .metric {
-  min-height: 142px;
-  padding: 22px 24px 20px;
+  min-height: 126px;
+  padding: 20px 24px 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid rgba(239,244,231,.72);
-  box-shadow: 12px 12px 0 rgba(4,19,15,.28);
+  box-shadow: 14px 14px 0 rgba(4,19,15,.34);
+  backdrop-filter: blur(4px);
+}
+.impact-metrics .metric:before {
+  content: "";
+  width: 34px;
+  height: 4px;
+  margin-bottom: 10px;
+  background: currentColor;
+  opacity: .85;
 }
 .impact-metrics .metric-install { background: rgba(239,243,231,.96); color: #111815; }
 .impact-metrics .metric-peak { background: rgba(12,20,18,.94); color: #f6f7ef; border-color: rgba(217,250,85,.62); }
 .metric-kicker { font: 900 14px/1.25 "Noto Sans SC", sans-serif; letter-spacing: .5px; }
 .impact-metrics strong {
   margin: 8px 0 2px;
-  font: 900 clamp(34px,3.3vw,52px)/.9 "Barlow Condensed", "Noto Sans SC", sans-serif;
+  font: 900 clamp(38px,4vw,58px)/.9 "Barlow Condensed", "Noto Sans SC", sans-serif;
   letter-spacing: .3px;
 }
 .impact-metrics .metric-install strong { color: #12241d; }
@@ -61,12 +78,12 @@
 .impact-metrics small { color: inherit; opacity: .72; font-size: 12px; line-height: 1.5; }
 .hero-art, .pulse { display: none; }
 @keyframes arkRain {
-  from { transform: translate3d(-1.5%,-12%,0); }
-  to { transform: translate3d(1.5%,12%,0); }
+  from { background-position: 0 -220px, 24px -260px, 0 -120px; }
+  to { background-position: -86px 180px, -128px 280px, 0 80px; }
 }
 @media (max-width: 900px) {
   .hero { min-height: 720px; background-size: 100% 100%, auto 105%; background-position: center, 70% bottom; }
-  .impact-metrics { grid-template-columns: 1fr; right: 22px; bottom: 22px; width: min(430px, calc(100% - 44px)); }
+  .impact-metrics { right: 22px; bottom: 22px; width: min(430px, calc(100% - 44px)); gap: 12px; }
   .impact-metrics .metric { min-height: 108px; padding: 18px 20px; }
 }
 @media (prefers-reduced-motion: reduce) { .hero:before { animation: none; } }
