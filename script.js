@@ -31,7 +31,7 @@ if (resourcesHeading) resourcesHeading.textContent = '方舟官服地图';
 const intro = document.querySelector('.hero-copy .intro');
 if (intro) intro.textContent = '我是方舟 UP 主 Zou走走，持续整理战斗画质、实用设置、官服地图和值得体验的服务器。所有内容会标注适用版本与更新时间。';
 const metricNote = document.querySelector('.status-card small');
-if (metricNote) metricNote.innerHTML = '截至 2024 年 12 月 · 主机与 PC，非实时在线人数<br>历史 Steam 同时在线峰值：24.8 万人';
+if (metricNote && !document.querySelector('.metric-peak')) metricNote.innerHTML = '截至 2024 年 12 月 · 主机与 PC，非实时在线人数<br>历史 Steam 同时在线峰值：24.8 万人';
 const quickResource = document.querySelector('.quick-grid a:nth-child(2)');
 if (quickResource) {
   const title = quickResource.querySelector('b');
