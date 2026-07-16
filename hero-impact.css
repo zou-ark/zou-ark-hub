@@ -1,4 +1,4 @@
-/* Hero impact upgrade: bigger survivor focus, real rain motion, and two right-side data beats. */
+/* Hero impact upgrade: bigger survivor focus and two right-side data beats. */
 .hero {
   min-height: 650px;
   isolation: isolate;
@@ -7,22 +7,7 @@
   background-position: center, 66% center;
   background-repeat: no-repeat;
 }
-.hero:before {
-  content: "";
-  position: absolute;
-  inset: -22% -8%;
-  z-index: 0;
-  pointer-events: none;
-  background-image:
-    linear-gradient(112deg, transparent 0 42%, rgba(240,255,248,.45) 48%, rgba(240,255,248,.18) 52%, transparent 60%),
-    linear-gradient(112deg, transparent 0 44%, rgba(210,238,230,.24) 49%, transparent 58%),
-    radial-gradient(circle, rgba(235,255,248,.24) 0 1px, transparent 2px);
-  background-size: 34px 132px, 58px 190px, 90px 90px;
-  background-position: 0 0, 24px -80px, 0 0;
-  opacity: .86;
-  filter: blur(.15px);
-  animation: arkRain 1.05s linear infinite;
-}
+.hero:before { content: none; }
 .hero:after {
   content: "";
   position: absolute;
@@ -77,13 +62,8 @@
 .impact-metrics .metric-peak strong { color: var(--acid); text-shadow: 0 0 18px rgba(217,250,85,.18); }
 .impact-metrics small { color: inherit; opacity: .72; font-size: 12px; line-height: 1.5; }
 .hero-art, .pulse { display: none; }
-@keyframes arkRain {
-  from { background-position: 0 -220px, 24px -260px, 0 -120px; }
-  to { background-position: -86px 180px, -128px 280px, 0 80px; }
-}
 @media (max-width: 900px) {
   .hero { min-height: 720px; background-size: 100% 100%, auto 105%; background-position: center, 70% bottom; }
   .impact-metrics { right: 22px; bottom: 22px; width: min(430px, calc(100% - 44px)); gap: 12px; }
   .impact-metrics .metric { min-height: 108px; padding: 18px 20px; }
 }
-@media (prefers-reduced-motion: reduce) { .hero:before { animation: none; } }

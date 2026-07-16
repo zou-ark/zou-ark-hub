@@ -18,7 +18,8 @@
     { category: '滤镜与回放', kind: 'FEISHU DOCS', title: 'N 卡滤镜与及时回放', count: '2 篇外部文档', description: 'N 卡及时回放及滤镜参数调整，重点关注色调、强度、温度和亮丽。', action: 'open', assets: [['N 卡及时回放', 'https://www.feishu.cn/docx/TQuXdtjNyoVtPgxOawZcBETAn7c', '飞书文档'], ['N 卡滤镜参数说明', 'https://www.feishu.cn/docx/Qxifd4YMpoGAFdxh1XJcMHrynJb', '飞书文档']] },
     { category: '修复工具', kind: 'LOCAL TOOL', title: '白框 4096 / 658 报错修复', count: '1 个 EXE 工具', description: '用于方舟反复白框问题排查。下载前请确认来源、杀毒软件提示和游戏版本。', action: 'open', protected: true, assets: [['下载修复工具', 'downloads/tools/ark-whitebox-fix.exe', 'EXE · 276KB'], ['使用提醒', '', '先备份游戏文件']] },
     { category: '外部资料', kind: 'EXTERNAL DOC', title: '网络与外部访问资料', count: '1 篇飞书文档', description: '资料包中的网络相关内容保留为外部文档入口，不在本站重新托管工具。', action: 'open', protected: true, assets: [['免费和付费 VPN 下载使用', 'https://www.feishu.cn/docx/ChladXlYsoaOTmx8xHTcDG1hnqg', '飞书文档 · 外部打开']] },
-    { category: 'Zou 工具箱', kind: 'WINDOWS APP', title: 'Zou 连点器', count: 'Windows AutoHotkey', description: '左键、右键、C 键连点，间隔设置、长按设置与自定义快捷键。VX：Hiizou。', action: 'open', protected: true, assets: [['下载 Zou 连点器脚本', './tools/Zou连点器.ahk', 'AHK v2'], ['使用说明', './tools/README.txt', 'TXT']] }
+    { category: 'Zou 工具箱', kind: 'WINDOWS APP', title: 'Zou 连点器', count: 'Windows AutoHotkey', description: '左键、右键、C 键连点，间隔设置、长按设置与自定义快捷键。VX：Hiizou。', action: 'open', protected: true, assets: [['下载 Zou 连点器脚本', './tools/Zou连点器.ahk', 'AHK v2'], ['使用说明', './tools/README.txt', 'TXT']] },
+    { category: 'Zou 工具箱', kind: 'WINDOWS APP', title: 'Zou 准星工具', count: 'Windows EXE 工具', description: '屏幕中心准星覆盖工具，可选择显示器、形状、颜色、尺寸与偏移；适合无边框全屏或窗口化全屏。VX：Hiizou。', action: 'open', protected: true, assets: [['下载 Zou 准星工具', './tools/ZouCrosshair.exe', 'EXE · 2.8MB'], ['使用说明', './tools/ZouCrosshair-README.txt', 'TXT']] }
   ];
 
   const categories = ['全部', ...new Set(entries.map(entry => entry.category))];
